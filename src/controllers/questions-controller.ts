@@ -8,7 +8,7 @@ class QuestionsController {
       where: {
         title: {
           //se contém o título, não precisa ser igual
-          contains:request.query.title?.toString().trim(),
+          contains: request.query.title?.toString().trim(),
           //não faz diferença se é maiúsculo ou minúsculo
           mode: "insensitive",
         },
@@ -16,7 +16,7 @@ class QuestionsController {
       //ordenação por título em ordem crescente
       orderBy: {
         title: "asc",
-      }
+      },
     });
     return response.json(questions);
   }
@@ -36,6 +36,19 @@ class QuestionsController {
   }
 
   async update(request: Request, response: Response) {
+    const { id } = request.params;
+    const { title, content } = request.body;
+
+    await prisma.question.update({
+      where: {
+        id,
+      },
+      data: {
+        title,
+        content,
+      },
+    });
+
     return response.json();
   }
 
