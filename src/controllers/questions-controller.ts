@@ -6,6 +6,8 @@ class QuestionsController {
   }
 
   async create(request: Request, response: Response) {
+    const { question, options } = request.body
+
     return response.status(201).json()
   }
 

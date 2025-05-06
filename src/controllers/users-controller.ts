@@ -10,8 +10,10 @@ class UsersController {
   }
 
   async create(request: Request, response: Response) {
+    //recupera os dados enviados pelo usuário - insomnia - json
     const { name, email } = request.body;
 
+    //cria um usuário no banco de dados
     await prisma.user.create({
       data: {
         name,
