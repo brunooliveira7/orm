@@ -13,6 +13,9 @@ model User {
   name String
   email String @unique
 
+  //relacionamento com a tabela Question - 1 para muitos[], (um para um tira [])
+  questions Question[]
+
   //nome da tabela
   @@map("users")
 }
@@ -28,6 +31,9 @@ model Question {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   userId String @map("user_id")
+
+  //relacionamento com a tabela User
+  user User @relation(fields: [userId], references: [id])
 
   //nome da tabela
   @@map("questions")
