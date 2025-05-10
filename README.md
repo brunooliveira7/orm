@@ -28,5 +28,7 @@ Prisma ORM: Ferramenta de mapeamento objeto-relacional para acesso ao banco de d
 
 Express: Framework para criação das rotas HTTP.
 
+Integração com TypeScript para maior segurança e produtividade.
+
 
 
