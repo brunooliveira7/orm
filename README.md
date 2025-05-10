@@ -11,15 +11,6 @@ Esta API foi desenvolvida com **Node.js** e utiliza o **Prisma ORM** para intera
 
 ---
 
-| Método | Rota         | Descrição            |
-| ------ | ------------ | -------------------- |
-| POST   | `/users`     | Cria um novo usuário |
-| GET    | `/users/:id` | Retorna um usuário   |
-| PUT    | `/users/:id` | Atualiza um usuário  |
-| DELETE | `/users/:id` | Remove um usuário    |
-
----
-
 # 🔧 Tecnologias Utilizadas
 
 Node.js: Plataforma JavaScript para construção do servidor.
