@@ -21,5 +21,8 @@ Express: Framework para criação das rotas HTTP.
 
 Integração com TypeScript para maior segurança e produtividade.
 
+---
 
-
+<p align="center">
+  <img alt="License" src="https://github.com/brunooliveira7/API-Query-Builder/blob/main/assets/Query%20Builder.png">
+</p>
