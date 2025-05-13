@@ -24,5 +24,5 @@ Integração com TypeScript para maior segurança e produtividade.
 ---
 
 <p align="center">
-  <img alt="License" src="https://github.com/brunooliveira7/API-Query-Builder/blob/main/assets/Query%20Builder.png">
+  <img alt="License" src="https://github.com/brunooliveira7/orm/blob/main/assets/Layout%20ORM.png">
 </p>
